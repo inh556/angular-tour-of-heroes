@@ -1,3 +1,6 @@
+# About thie practice
+This practice is prepared for an angular project. 
+
 # AngularTourOfHeros
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
