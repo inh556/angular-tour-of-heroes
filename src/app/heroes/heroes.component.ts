@@ -16,7 +16,6 @@ import { HEROES } from '../mock-heroes';
   styleUrls: ['./heroes.component.css']
 })
 
-// Always export the component class so you can import it elsewhere
 export class HeroesComponent implements OnInit {
   heroes = HEROES;
 
@@ -26,5 +25,10 @@ export class HeroesComponent implements OnInit {
     // The ngOnInit is a lifecycle hook Angular calls ngOnInit shortly
     //  after creating a component. It's a good place to put initialization logic.
     
+  }
+  selectedHero: Hero;
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
   }
 }
