@@ -9,6 +9,8 @@ import { Observable, of } from 'rxjs';
 
 export class HeroService {
   getHeroes(): Observable<Hero[]> {
+    // Todo: send the message _after_ fetching the heroes
+    this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);
   }
   constructor(private messageService: MessageService) { }
